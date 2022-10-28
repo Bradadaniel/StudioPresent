@@ -713,7 +713,7 @@ section{
     background: #B50014;
 }
 .footer-box1{
-    display: flex;
+    text-align: left;
     min-width: 300px;
     align-items: center;
 }
@@ -762,7 +762,6 @@ section{
 .footer-box3 .icons a i{
     transform: scale(1.5);
 }
-
 .copyright{
     padding: 0.5rem;
     background: #66000B ;
@@ -780,7 +779,9 @@ section{
     }
     .Footer-text{
         text-align: center;
-        margin: 0 4rem;
+        /*margin: 0 4rem;*/
+        margin: 0 auto;
+        max-width: 1400px;
     }
     .copyright span{
         padding: 0.5rem;
@@ -858,9 +859,6 @@ section{
     }
 }
 @media only screen and (max-width: 1199px) {
-    .footer-box1, .footer-box2, .footer-box3{
-        min-width: 190px;
-    }
     .footer-box3{
         flex-direction: column;
     }
@@ -919,17 +917,10 @@ section{
 @media only screen and (max-width: 991px) {
     .footer-box1, .footer-box2, .footer-box3{
         min-width: 210px;
+        width: 100%;
     }
-}
-@media(max-width: 900px){
-    .grid-container .grid-item2 .text {
-        width: 30rem;
-    }
-    .grid-container .grid-item2 .text h1{
-        margin-left: 0;
-    }
-    .grid-container .grid-item2 .text p{
-        margin-left: 0;
+    .footer-box1{
+        text-align: center;
     }
 }
 @media (max-width: 724px){
@@ -999,15 +990,6 @@ section{
     }
 }
 @media(max-width: 662px){
-    .grid-container .grid-item2 .text {
-        width: 30rem;
-    }
-    .grid-container .grid-item2 .text h1{
-        margin-left: 0;
-    }
-    .grid-container .grid-item2 .text p{
-        margin-left: 0;
-    }
     .first-container .row2 h2{
         justify-content: center;
         text-align: center;
